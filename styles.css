@@ -1,0 +1,29 @@
+.box-1{
+height: 200px;
+width: 200px;
+/* background-color: blue; */
+animation-name: colorChange;
+animation-duration: 3s;
+/* transition-property: background-color; */
+animation-iteration-count: infinite;
+}
+
+/* .box-1:hover{
+    background-color: aqua;
+} */
+
+
+
+@keyframes colorChange {
+
+    from {
+background-color: black;
+border-radius: 50%;
+    }
+
+    to {
+background-color: bisque;
+box-shadow: 50%;
+
+    }
+}
