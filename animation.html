@@ -15,5 +15,64 @@
 <img src="./photoss/Fiat-Egea-2022-blue.jpg">
 <img src="./photoss/Fiat-Egea-2023-black.png">
     </div>
+
+    <div class="box"></div>
+
+<!-- method="POST/GET" -->
+<!-- POST-for sensitive data(like passwords) with action=""-->
+<!-- GET-for searching from the keywords with let...-->
+    <form id="LoginForm" method="" >
+        <div>
+            <label for="username">USERNAME</label>
+            <input  class="username" placeholder="Enter your username" type="text" name="username" id="username" minlength="5" required>
+        </div>
+        <div>
+            <label for="age">AGE</label>
+            <input class="age" placeholder="Enter your age" type="number" name="age" id="age" min="18" max="35" required/>
+        </div>
+        <div>
+            <label for="password">PASSWORD</label>
+            <input placeholder="Enter your password" type="password" name="password" id="password" required >
+        </div>
+        <div>
+            <textarea class="txt-area" name="" id="" cols="30" rows="10" placeholder="Enter your message.."></textarea>
+        </div>
+
+        <div>
+            <input type="radio" name="burger">    Option 1
+            <input type="radio" name="burger"> Option 2
+
+            <input type="checkbox" name="Cheese">Cheese
+
+            <input type="date">
+
+            <select name="" id="">
+                <option value="">Lunch</option>
+                <option value="">Dinner</option>
+            </select>
+        </div>
+
+        <button type="submit">LOGIN</button> 
+        <button type="button" id="clear">CLEAR</button>
+
+        <div>
+            <input type="checkbox" class="sub">
+            <label for="sub">SUBSCRIBE</label>
+        </div>
+    </form>
+    <script>
+  
+        // form.onsubmit = function (e) {
+        //     e.preventDefault();
+        // }
+
+        let form = document.getElementById("LoginForm");
+        let clearForm = document.getElementById('clear')
+
+        clearForm.onclick = function() {
+            form.reset();
+        }
+    </script>
+
 </body>
 </html>
